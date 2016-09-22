@@ -4,7 +4,6 @@
     //drop the table if already exists
     $db->exec('DROP TABLE IF EXISTS paths');
 
-    //Create a basic table
-    $db->exec('CREATE TABLE paths (name varchar(255))');
+    $db->exec('CREATE TABLE paths (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name varchar(255) NOT NULL)');
     echo "Table paths has been created \n";
 ?>
